@@ -65,6 +65,78 @@ html {
     flex-direction: column;
 }
 
+@media (max-width: 576px) {
+    .cat {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .cat1 {
+        font-size: 18px;
+    }
+
+    .cat2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .cat {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 24px;
+        gap: 15px;
+    }
+
+    .cat1 {
+        font-size: 22px;
+    }
+
+    .cat2 {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .cat {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 26px;
+        gap: 20px;
+    }
+
+    .cat1 {
+        font-size: 24px;
+    }
+
+    .cat2 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .cat {
+        width: 900px;
+        margin-left: 19%;
+        font-size: 30px;
+        gap: 5%;
+    }
+
+    .cat1 {
+        font-size: 30px;
+    }
+
+    .cat2 {
+        width: 60%;
+    }
+}
+
+
+
 @keyframes rotateAndGrow {
     0% {
         transform: rotate(0deg) scale(0.1); 
