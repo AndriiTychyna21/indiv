@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/table.js" defer></script>
+    <title>academy</title>
+</head>
+<body>
+    <div class="container">
+        <header class = "header" id="header">
+            <div class="header_image">
+                    <img src="./img/1_Logo.svg" alt="">
+            </div>
+            <nav class="header_nav">
+                <div class="rectangle"></div>
+                <a href="index.html" class="header_text">ГОЛОВНА</a>
+                <div class="rectangle"></div>
+                <a href="tachers.html" class="header_text">ВИКЛАДАЧІ</a>
+                <div class="rectangle"></div>
+                <a href="test.html" class="header_text">ВСТУПНИКАМ</a>
+                <div class="rectangle"></div>
+                <a href="results.html" class="header_text">РЕЗУЛЬТАТИ</a>
+                <div class="rectangle"></div>
+                <a href="table.html" class="header_text">РОЗКЛАД</a>
+                <div class="rectangle"></div>
+            </nav>
+        </header>
+
+        <section class = "section15">
+            <div class = "div1sec1-555">
+            <h1 class="main_text-55">РОЗКЛАД  <span class="dddd"><br>ЗАНЯТЬ</span> </h1>
+            <div class="rectangle1"></div>
+
+            <p class = "p-sec1-5">
+                “Будь-які знання потребують гармонії та точності,<br> як і ваш розклад занять!”
+            </p>
+            <p class = "p2-sec5-5">
+                Тут ви знайдете не лише список занять, а й<br> магічний таймер, що покаже, скільки часу<br> залишилось до наступної пари. 
+            </p>
+            <p class = "p2-sec5-52">
+                Виберіть день тижня, щоб дізнатися розклад на<br> сьогодні. Дозвольте часу працювати на вас!
+            </p>
+            </div>
+        
+            <div class = "div2sec1-555">
+                <div class = "divv">
+                    <button id="button-time" class="button-time btn" onclick="displaySchedule(1)">
+                        ПН
+                    </button>
+
+                    <button id="button-time" class="button-time btn" onclick="displaySchedule(2)">
+                        ВТ
+                    </button>
+
+                    <button id="button-time" class="button-time btn" onclick="displaySchedule(3)">
+                        СР
+                    </button>
+
+                    <button id="button-time" class="button-time btn" onclick="displaySchedule(4)">
+                        ЧТ
+                    </button>
+
+                    <button id="button-time" class="button-time btn" onclick="displaySchedule(5)">
+                        ПТ
+                    </button>
+                </div>
+                
+                <div id="timetable" class="div-table">
+                    <table>
+                        <tr>
+                            <td>Землеробство: від насіння до врожаю</td>
+                            <td><span class="dddddd">8:30 - 9:50</span><br><br> До початку пари залишилось 15 хв</td>
+                        </tr>
+                        <tr>
+                            <td>Аеродинаміка в природі та техніці</td>
+                            <td><span class="dddddd">10:00 - 11:20</span><br><br>До початку пари залишилось 1 год 15 хв</td>
+                        </tr>
+                        <tr>
+                            <td>Основи ковальського мистецтва та ремесел</td>
+                            <td><span class="dddddd">12:00 - 13:20</span><br><br>До початку пари залишилось 3 год 15 хв</td>
+                        </tr>
+                        <tr>
+                            <td>Стратегія та тактика: грім як зброя</td>
+                            <td><span class="dddddd">13:30 - 14:50</span><br><br>До початку пари залишилось 5 год 40 хв</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </section> 
+
+    
+
+        <footer class = "footer">
+            <p class = "p-f"> © 2024 TSM Academy website.  All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+.section14{
+    position: relative;
+    justify-content:space-between;
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.main_text4{
+    font-size: var(--font-size-h2);
+    color: white;
+    font-family: var(--font-family-f);
+    text-decoration: none;
+}
+
+.p-sec4{
+    font-size: var(--font-size-p3);
+    color: white;
+    font-family: var(--font-family-kurale);
+}
+
+.p2-sec4{
+    font-size: var(--font-size-p5);
+    color: white;
+    font-family: var(--font-family-kurale);
+}
+
+.listres{
+    font-size: var(--font-size-p5);
+    color: white;
+    font-family: var(--font-family-kurale);
+}
+
+.p3-sec4{
+    font-size: var(--font-size-p9);
+    color: white;
+    font-family: var(--font-family-kurale);
+    padding-bottom: 2%;
+
+}
+
+.acad2{
+    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+@media (max-width: 1064px) {
+    .section14 {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .div1sec1 {
+        order: 1;
+    }
+
+    .div1sec2 {
+        order: 2;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .section14 {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main_text4 {
+        font-size: calc(var(--font-size-h2) * 0.8);
+        text-align: center;
+    }
+
+    .p-sec4 {
+        font-size: calc(var(--font-size-p3) * 0.8);
+        text-align: center;
+    }
+
+    .p2-sec4 {
+        font-size: calc(var(--font-size-p5) * 0.8);
+        text-align: center;
+    }
+
+    .listres {
+        font-size: calc(var(--font-size-p5) * 0.8);
+        padding-left: 20%;
+    }
+
+    .p3-sec4 {
+        font-size: calc(var(--font-size-p9) * 0.8);
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .acad2 {
+        width: 100%;
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section14 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main_text4 {
+        font-size: calc(var(--font-size-h2) * 0.6);
+        text-align: center;
+    }
+
+    .p-sec4 {
+        font-size: calc(var(--font-size-p3) * 0.6);
+        text-align: center;
+    }
+
+    .p2-sec4 {
+        font-size: calc(var(--font-size-p5) * 0.6);
+        text-align: center;
+    }
+
+    .listres {
+        font-size: calc(var(--font-size-p5) * 0.6);
+        padding-left: 10%;
+    }
+
+    .p3-sec4 {
+        font-size: calc(var(--font-size-p9) * 0.6);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .acad2 {
+        width: 100%;
+        padding-top: 5%;
+    }
+}

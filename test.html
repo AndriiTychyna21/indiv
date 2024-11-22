@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/quiz.js"></script>
+    <title>academy</title>
+</head>
+<body>
+    <div class="container">
+        <header class = "header" id="header">
+            <div class="header_image">
+                <img src="./img/1_Logo.svg" alt="">
+            </div>
+            <nav class="header_nav">
+                <div class="rectangle"></div>
+                <a href="index.html" class="header_text">ГОЛОВНА</a>
+                <div class="rectangle"></div>
+                <a href="index2.html" class="header_text">ВИКЛАДАЧІ</a>
+                <div class="rectangle"></div>
+                <a href="index3.html" class="header_text">ВСТУПНИКАМ</a>
+                <div class="rectangle"></div>
+                <a href="index4.html" class="header_text">РЕЗУЛЬТАТИ</a>
+                <div class="rectangle"></div>
+                <a href="index5.html" class="header_text">РОЗКЛАД</a>
+                <div class="rectangle"></div>
+            </nav>
+        </header>
+
+        <section class = "section13">
+            <div class = "div1-3">
+                <h1 class="main_text-3"><span class="dddd">ІНФОРМАЦІЯ ДЛЯ </span> <br>ВСТУПНИКІВ</h1>
+                <div class="rectangle1"></div>
+
+                <p class = "p-sec1-3">
+                    “Лише той, хто відчуває зв’язок із природою та духами предків, 
+                    здатен<br> творити справжні дива. Обери свій шлях і розкрий силу, яка дрімає в тобі!”
+                </p>
+                <p class = "p2-sec1-3">
+                    Ми створили місце, де сучасність зустрічається<br> з традиціями, а знання передаються з<br> 
+                    покоління в покоління. Готові дізнатися, на<br> якому факультеті вам судилося навчатися?
+                </p>
+                <p class = "p3-sec1-3">
+                    Пройдіть тест і відкрийте двері до своєї магічної долі!
+                </p>
+            </div>
+            <div class = "div2-3">
+                <div class = "div1sec2">
+                    <img src="./img/hol.svg" alt="acad" class="acad">
+                </div>
+
+                <a href="#test-section">
+                    <button id="button-abit" class="button-abit btn">
+                        ПЕРЕЙТИ ДО ТЕСТУ
+                    </button>
+                </a>
+                
+            </div>
+        </section>
+        <div class="rectangle2"></div>
+
+        <section id="test-section">
+            <div id ="question" class = "test-section1">
+                <h1 class="main_text-31">ТЕСТ ДЛЯ ВИЗНАЧЕННЯ ФАКУЛЬТЕТУ</h1>
+                <p class = "p-test">
+                    Питання 1: Що для вас найважливіше у житті?
+                </p>
+                <div class="rectangle1222"></div>
+                <form class="listt">
+                    <label>
+                        <input type="radio" name="q" value="2">
+                        Жити в гармонії з природою та допомагати їй процвітати.
+                    </label><br>
+                
+                    <label>
+                        <input type="radio" name="q" value="5">
+                        Розуміти та використовувати фізичні сили природи.
+                    </label><br>
+                
+                    <label>
+                        <input type="radio" name="q" value="3">
+                        Виражати себе через творчість і надихати інших.
+                    </label><br>
+                
+                    <label>
+                        <input type="radio" name="q" value="1">
+                        Захищати інших і стояти за справедливість.
+                    </label><br>
+                
+                    <label>
+                        <input type="radio" name="q" value="4">
+                        Піклуватися про довкілля та знаходити баланс між людьми та природою.
+                    </label><br>
+                
+                    <label>
+                        <input type="radio" name="q" value="0">
+                        Створювати щось нове та корисне.
+                    </label><br>
+                </form>
+                
+            </div>
+
+            
+            <div class = "test-section2">
+                <a href="#test-section">
+                    <button id="previous-button" type="button" class="button-abit btn" onclick="" disabled="true">
+                        ПОПЕРЕДНЄ ПИТАННЯ
+                    </button>
+                </a>
+
+                <a id = "pretty-link" href="#test-section">
+                    <button id="next-button" type="button" class="button-abit btn" onclick="swapQuestion(0, 1)">
+                        НАСТУПНЕ ПИТАННЯ
+                    </button>
+                </a>
+            </div>
+        </section>
+
+
+
+        <footer class = "footer">
+            <p class = "p-f"> © 2024 TSM Academy website.  All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

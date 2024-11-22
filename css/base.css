@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+:root{
+    
+    --font-family-kurale: 'Kurale', serif;
+    --font-family-f: 'Brygada 1918', serif;
+    --font-family-script: 'Bad Script', cursive;
+
+
+   --color-white: #FFFFFF;
+
+
+    --color-green: #A6F829;
+    --font-size-h1: 24px;
+    --font-size-h2: 65px;
+    --font-size-h3: 54px;
+
+    --font-size-p2: 40px;
+    --font-size-p3: 30px;
+    --font-size-p4: 32px;
+    --font-size-p5: 25px;
+    --font-size-p6: 36px;
+    --font-size-p7: 15px;
+    --font-size-p8: 28px;
+    --font-size-p9: 20px;
+
+}
+
+
+

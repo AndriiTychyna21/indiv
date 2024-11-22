@@ -1,0 +1,223 @@
+.section22 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.squares {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+    margin-top: 3%;
+    padding-bottom: 2%;
+
+}
+
+.item-sq {
+    display: flex;
+    background-color: #131E3A;
+    border: 3px solid #294281;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+    height: max-content;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rect {
+    position: relative;
+    background-color: #0E1529;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-sq-p {
+    font-size: var(--font-size-p3);
+
+    text-align: center;
+    font-family: var(--font-family-f);
+    font-weight: bold;
+}
+
+.f {
+    font-size: var(--font-size-p7);
+    color: white;
+    font-family: var(--font-family-f);
+    text-decoration: none;
+}
+
+.f2 {
+    font-size: var(--font-size-p7);
+    color: white;
+    font-family: var(--font-family-kurale);
+    text-decoration: none;
+}
+
+.d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.rectangle-item{
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-green);
+}
+
+.rectangle2-item {
+    height: 1px;
+    background-color: white;
+}
+
+
+.item-in-item{ 
+    width: 55%;
+}
+
+.item-in-item-img {
+    position: relative;
+    height: 100%;
+    width: 45%;
+    background-color: #131E3A;
+    overflow: hidden;
+}
+
+.item-in-item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.item-in-item-img::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: var(--font-size-p7);
+    font-family: var(--font-family-f);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.item-in-item-img:hover img {
+    filter: brightness(30%);
+}
+
+.item-in-item-img:hover::after {
+    opacity: 1;
+}
+
+.item-in-item-img.img1::after {
+    color: white;
+    font-size: var(--font-size-p9);
+    font-family: var(--font-family-kurale);
+    content: "Студенти жартують, що завдяки його порадам у дипломі можна кувати і золоті оцінки.";
+}
+
+.item-in-item-img.img2::after {
+    color: white;
+    font-size: var(--font-size-p9);
+    font-family: var(--font-family-kurale);
+    content: "Якщо пропустили його лекцію, чекайте грози… або виклику до деканату.";
+}
+
+.item-in-item-img.img3::after {
+    color: white;
+    font-size: var(--font-size-p9);
+    font-family: var(--font-family-kurale);
+    content: "Щороку перед сесією проводить майстер-клас із встигнути виростити врожай знань до жнив";
+}
+
+.item-in-item-img.img4::after {
+    color: white;
+    font-size: var(--font-size-p9);
+    font-family: var(--font-family-kurale);
+    content: "Стверджує, що на студентських концертах він просто дивиться, але його завжди ловлять за грою на бубні";
+}
+
+.item-in-item-img.img5::after {
+    color: white;
+    font-size: var(--font-size-p9);
+    font-family: var(--font-family-kurale);
+    content: "Якось студентам на екзамені дали завдання виростити город за 15 хвилин...";
+}
+
+.item-in-item-img.img6::after {
+    color: white;
+    font-size: var(--font-size-p9);
+    font-family: var(--font-family-kurale);
+    content: "Якщо тебе накрило вітром у коридорі, це точно Стрибог шукає запізнілих.";
+}
+
+@media (max-width: 1260px) {
+    .section22 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .squares {
+        width: 80%;
+    }
+
+    .item-sq {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .item-in-item-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-in-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section22 {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .squares {
+        width: 90%;
+    }
+
+    .item-sq {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .item-in-item-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-in-item {
+        width: 100%;
+    }
+}

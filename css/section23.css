@@ -1,0 +1,136 @@
+.test-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.main_text-31{
+    font-size: var(--font-size-h2);
+    color: white;
+    font-family: var(--font-family-f);
+    text-decoration: none;
+    text-align: center;
+}
+
+.p-test{
+    font-size: 40px;
+    color: white;
+    font-family: var(--font-family-kurale);
+    padding-left: 13%;
+
+}
+
+.rectangle1222{
+    width: 680px;
+    height: 2px;
+    background-color: var(--color-green);
+    margin-left: 13%;
+
+}
+
+.listt{
+    font-family: var(--font-family-kurale);
+    font-size: var(--font-size-p5);
+    color: white;
+    padding-left: 15%;
+    line-height: 3;
+
+}
+
+.test-section1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.test-section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+@media (max-width: 768px) {
+    .test-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .main_text-31 {
+        font-size: calc(var(--font-size-h2) * 0.8);
+        text-align: center;
+    }
+
+    .p-test {
+        font-size: calc(40px * 0.8);
+        padding-left: 10%;
+    }
+
+    .rectangle1222 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .listt {
+        font-size: calc(var(--font-size-p5) * 0.8);
+        padding-left: 10%;
+    }
+
+    .test-section2 {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    #button-abit {
+        width: 250px;
+        height: 70px;
+        font-size: calc(var(--font-size-p3) * 0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .test-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main_text-31 {
+        font-size: calc(var(--font-size-h2) * 0.6);
+        text-align: center;
+    }
+
+    .p-test {
+        font-size: calc(40px * 0.6);
+        padding-left: 5%;
+    }
+
+    .rectangle1222 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .listt {
+        font-size: calc(var(--font-size-p5) * 0.6);
+        padding-left: 5%;
+    }
+
+    .test-section2 {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    #button-abit {
+        width: 200px;
+        height: 60px;
+        font-size: calc(var(--font-size-p3) * 0.6);
+    }
+}

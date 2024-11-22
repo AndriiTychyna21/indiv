@@ -1,0 +1,124 @@
+.section1{
+    position: relative;
+    justify-content:space-between;
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.main_text{
+    font-size: var(--font-size-h2);
+    color: white;
+    font-family: var(--font-family-f);
+    text-decoration: none;
+}
+
+.div1sec1{
+    display: flex;
+    flex-direction: column;
+
+}
+.acad{
+    padding-bottom: 2%;
+}
+.rectangle1 {
+    width: 680px;
+    height: 2px;
+    background-color: var(--color-green);
+}
+.dddd{
+    color: var(--color-green);
+}
+
+.p-sec1{
+    font-size: var(--font-size-p2);
+    color: white;
+    font-family: var(--font-family-kurale);
+}
+
+.p2-sec1{
+    font-size: var(--font-size-p3);
+    color: white;
+    font-family: var(--font-family-kurale);
+    padding-bottom: 5%;
+}
+
+.rectangle2 {
+    position: absolute;
+
+    width: 1248px;
+    height: 2px;
+    background-color: var(--color-green);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1260px) {
+    .section1 {
+        flex-direction: column; 
+        align-items: center;
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
+
+    .main_text {
+        font-size: calc(var(--font-size-h2) * 0.8); 
+        text-align: center; 
+    }
+
+    .rectangle1 {
+        width: 90%; 
+    }
+
+    .p-sec1,
+    .p2-sec1 {
+        font-size: calc(var(--font-size-p2) * 0.8); 
+        text-align: center;
+    }
+
+    .rectangle2 {
+        width: 90%;
+    }
+
+    .acad {
+        width: 80%; 
+        max-width: 400px; 
+        height: auto;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .section1 {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .main_text {
+        font-size: calc(var(--font-size-h2) * 0.6);
+    }
+
+    .rectangle1,
+    .rectangle2 {
+        width: 100%;
+    }
+
+    .p-sec1,
+    .p2-sec1 {
+        font-size: calc(var(--font-size-p2) * 0.6);
+    }
+
+    .acad {
+        width: 70%;
+        max-width: 300px; 
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+

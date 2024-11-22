@@ -1,0 +1,90 @@
+@import url(base.css);
+@import url(header.css);
+@import url(section1.css);
+@import url(section2.css);
+@import url(section3.css);
+@import url(footer.css);
+
+@import url(section12.css);
+@import url(section22.css);
+@import url(section32.css);
+
+@import url(section13.css);
+@import url(section23.css);
+
+@import url(section14.css);
+
+@import url(section15.css);
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #091312 14%, #122624 57%, #234340 100%);
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    box-shadow: darkgreen 0px 8px 15px -3px, darkgreen 0px 6px 10px -2px;
+    cursor: pointer;
+    opacity: .95;
+}
+
+.btn:active {
+    background-color: #0F1F1D;
+    color: white;
+    box-shadow: none; 
+    transform: translateY(4px);
+    opacity: .9;
+}
+
+
+.cat{
+    display: flex;
+    flex-direction: row;
+    background-color: #131E3A;
+    border: 3px solid var(--color-green);
+    gap: 5%;
+    align-items: center;
+    margin-left: 19%;
+
+    width: 900px;
+    font-size: 30px;
+    color: white;
+    font-family: var(--font-family-kurale);
+    padding: 1%;
+    text-align: center;
+    animation: rotateAndGrow 3s ease-in-out forwards;
+}
+
+.cat1{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes rotateAndGrow {
+    0% {
+        transform: rotate(0deg) scale(0.1); 
+    }
+    5% {
+        transform: rotate(240deg) scale(0.4); 
+    }
+    15% {
+        transform: rotate(420deg) scale(0.6); 
+    }
+    25% {
+        transform: rotate(720deg) scale(0.7); 
+    }
+    60% {
+        transform: rotate(1080deg) scale(1.2); 
+    }
+    90% {
+        transform: rotate(1400deg) scale(1.1); 
+    }
+    100% {
+        transform: rotate(1440deg) scale(1); 
+    }
+}

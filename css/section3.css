@@ -1,0 +1,128 @@
+.section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 3%;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.rectangle3 {
+    width: 265px;
+    height: 1px;
+    background-color: var(--color-green);
+}
+
+.div1sec3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
+    width: 90%;
+}
+
+.p-sec3 {
+    font-family: var(--font-family-f);
+}
+
+.p2-sec3 {
+    font-family: var(--font-family-kurale);
+}
+
+.div1sec3 .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.div1sec3 .item:first-child {
+    align-items: flex-start;
+}
+
+.div1sec3 .item:nth-child(2) {
+    align-items: center;
+}
+
+.div1sec3 .item:last-child {
+    align-items: flex-end;
+}
+
+.p-sec3 {
+    font-size: var(--font-size-p4);
+}
+
+.p2-sec3 {
+    font-size: var(--font-size-p5);
+}
+
+@media (max-width: 1260px) {
+    .section3 {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .div1sec3 {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+
+    .div1sec3 .item {
+        width: 100%;
+        align-items: center;
+    }
+
+    .rectangle3 {
+        width: 90%;
+    }
+
+    .p-sec3 {
+        font-size: calc(var(--font-size-p4) * 0.8);
+    }
+
+    .p2-sec3 {
+        font-size: calc(var(--font-size-p5) * 0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .section3 {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .div1sec3 {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .div1sec3 .item {
+        width: 100%;
+    }
+
+    .rectangle3 {
+        width: 100%;
+    }
+
+    .p-sec3 {
+        font-size: calc(var(--font-size-p4) * 0.7);
+    }
+
+    .p2-sec3 {
+        font-size: calc(var(--font-size-p5) * 0.7);
+    }
+}
